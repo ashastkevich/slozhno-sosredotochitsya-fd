@@ -13,8 +13,7 @@
   --font-color-title-text: #000028;
   --bg-image: url(../images/cover-image-dark.png);
   --main-text-color: #f1b2ce;
-  --font-color-title3: #000028;
-  --font-color-text3: #f1b2ce;
   --nav-color: #ff0070;
   --nav-hover-color: rgb(255 0 112 / 0.4);
+  --title-max-width: 260px;
 }
