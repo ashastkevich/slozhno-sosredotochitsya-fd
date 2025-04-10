@@ -164,9 +164,6 @@
   margin-bottom: 10px;
 }
 
-.text-block__title {
-}
-
 .text-block__content {
   font-weight: 400;
   color: var(--main-text-color);
@@ -327,4 +324,3 @@
     --title-max-width: 260px
   }
 }
-
