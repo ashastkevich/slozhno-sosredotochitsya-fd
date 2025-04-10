@@ -25,8 +25,8 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid var(--decor-color);
-  border-block-start: 1px solid var(--decor-color);
+  border-inline-end: 1px solid var(--nav-color);
+  border-block-start: 1px solid var(--nav-color);
   inset-inline-end: var(--main-gap);
   inset-block-start: var(--main-gap);
 }
@@ -36,8 +36,8 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid var(--decor-color);
-  border-block-end: 1px solid var(--decor-color);
+  border-inline-start: 1px solid var(--nav-color);
+  border-block-end: 1px solid var(--nav-color);
   inset-inline-start: var(--main-gap);
   inset-block-end: var(--main-gap);
   padding-inline-start: 10px;
@@ -62,7 +62,7 @@
   font-size: 18px;
   line-height: 100%;
   text-align: center;
-  color: var(--decor-color);
+  color: var(--nav-color);
   background-color: transparent;
   border: none;
 }
@@ -133,7 +133,7 @@
 
 .content__section-title {
   font-weight: 700;
-  color: var(--decor-color);
+  color: var(--decor-color-text);
   margin-bottom: 20px;
 }
 
@@ -154,7 +154,7 @@
 
 .text-block__title,
 .text-block__subtitle {
-  color: var(--main-bg-color);
+  color: var(--font-color-title-text);
   background-color: var(--decor-color);
   margin-bottom: 10px;
   font-size: 18px;
@@ -327,3 +327,4 @@
     --title-max-width: 260px
   }
 }
+
