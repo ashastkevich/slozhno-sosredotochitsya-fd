@@ -6,10 +6,15 @@
 :root {
   --decor-color: #ff0070;
   --main-gap: 10px;
+  --page-gap: 40px;
+  --content-gap: 50px;
   --font-color: #db00ff;
+  --main-bg-color: #000028;
   --font-color-title-text: #000028;
   --bg-image: url(../images/cover-image-dark.png);
-  --text-color: #f1b2ce;
+  --main-text-color: #f1b2ce;
   --font-color-title3: #000028;
   --font-color-text3: #f1b2ce;
+  --nav-color: #ff0070;
+  --nav-hover-color: rgb(255 0 112 / 0.4);
 }
