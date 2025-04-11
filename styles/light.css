@@ -18,15 +18,20 @@
   --main-text-color: #353430;
   --nav-hover-color: rgba(50, 49, 45, 0.4);
   --nav-color: #353430;
+
+
+
+}
+
+.theme-light .header__rec {
+  display: none;
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
 
-.theme-light .header__rec {
-  display: none;
-}
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -39,5 +44,8 @@
     --main-text-color: #353430;
     --nav-hover-color: rgba(50, 49, 45, 0.4);
     --nav-color: #353430;
+  }
+  .header__rec {
+    display: none;
   }
 }
