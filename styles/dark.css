@@ -29,34 +29,3 @@
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
-
-.header {
-  position: relative;
-}
-
-.header__rec::before {
-  display: block;
-  position: absolute;
-  content: "rec";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 139%;
-  text-align: center;
-  color: #ff0070;
-  text-transform: uppercase;
-  inset-inline-end: calc(var(--main-gap) + 28px);
-  inset-block-start: var(--main-gap);
-}
-
-.header__rec::after {
-  content: "";
-  position: absolute;
-  display: block;
-  inline-size: 9px;
-  block-size: 9px;
-  border-radius: 100%;
-  background-color: #ff0070;
-  box-shadow: 0 0 4px 2px #ff0070;
-  inset-inline-end: calc(var(--main-gap) + 9px);
-  inset-block-start: calc(var(--main-gap) + 8px);
-}
