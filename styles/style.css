@@ -94,38 +94,25 @@
   color: var(--nav-color);
   background-color: transparent;
   border: none;
+  padding: 2px 12px 4px 12px;
+  border: 1px solid transparent;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--nav-color);
+  border-color: var(--nav-color);
   pointer-events: none;
 }
-
-.header__theme-menu-button {
-  padding: 2px 12px 4px 12px;
-}
-
 
 .header__theme-menu-button:focus {
   outline: none;
   border-bottom: 1px solid var(--nav-color);
 }
 
-.header__theme-menu-button:focus-visible::after {
-  content: '';
-  position: absolute;
-  inline-size: 100%;
-  block-size: 1px;
-  background-color: var(--nav-color);
-  inset-block-end: -2px;
-  inset-inline-start: 0;
-}
-
 .header__theme-menu-button:hover {
-  border: 1px solid var(--nav-hover-color);
+  border-color: var(--nav-hover-color);
 }
 
-.header__title {
+.main__title {
   display: block;
   grid-row: 2;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -163,7 +150,6 @@
 .content__section {
   line-height: 130%;
   font-size: 18px;
-  
 }
 
 .content__section-title {
@@ -180,6 +166,7 @@
 .text-block {
   display: grid;
   align-items: start;
+  gap: 10px;
 }
 
 .text-block__subtitle {
@@ -191,18 +178,27 @@
 .text-block__subtitle {
   color: var(--font-color-title-text);
   background-color: var(--decor-color);
-  margin-bottom: 10px;
   font-size: 18px;
 }
 
 .text-block__list {
-  margin-bottom: 10px;
-}
-
-
-.text-block__content {
   display: grid;
   gap: 10px;
+}
+
+.text-block__content-link {
+  text-decoration: none;
+}
+
+.text-block__content-link:hover {
+  text-shadow: 2px 2px 0px var(--decor-color);
+}
+
+.text-block__content-link:focus-visible {
+  outline: 1px solid var(--main-text-color);
+}
+
+.text-block__content {
   font-weight: 400;
   color: var(--main-text-color);
 }
@@ -213,6 +209,11 @@
 
 .text-block__list-modificator {
   margin-bottom: 0px;
+}
+
+.gallery {
+  display: grid;
+  gap: 10px;
 }
 
 .text-block__gallery {
@@ -254,7 +255,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  .header__title {
+  .main__title {
     grid-row: 1;
     font-weight: 700;
     text-shadow: 2px 2px 0 var(--decor-color);
@@ -268,14 +269,10 @@
     /* block-size: 1024px; */
   }
 
-  .header__title {
+  .main__title {
     justify-self: start;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-left: 0px;
-  }
-
-  .header__theme-menu {
-
   }
 
   .header__text {
@@ -293,6 +290,7 @@
 
   .gallery.content__section {
     grid-template-columns: 1fr;
+
   }
 
   .text-block__gallery {
