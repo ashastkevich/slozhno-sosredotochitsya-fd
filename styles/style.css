@@ -188,14 +188,17 @@
 
 .text-block__content-link {
   text-decoration: none;
+  text-shadow: 2px 2px 0px var(--decor-color);
+
 }
 
 .text-block__content-link:hover {
-  text-shadow: 2px 2px 0px var(--decor-color);
+  border-bottom: 1px solid var(--main-text-color);
 }
 
-.text-block__content-link:focus-visible {
-  outline: 1px solid var(--main-text-color);
+.text-block__content-link:focus {
+  outline: none;
+  border: 1px solid var(--main-text-color);
 }
 
 .text-block__content {
